@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* NAV */
+
+.navbar {
+    background-color: #373A3C!important;
+    height: 60px;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+}
+
+.navbar ul li a:hover {
+    opacity: 0.7;
+    transition: 400ms;
+}
+
+/* INICIO */
+
+#inicio, #recetas {
+    color: #373A3C;
+}
+
+   /* TOOLTIP */
+    .tooltip-inner {
+        max-width: none;
+    }
+
+    .custom-tooltip {
+        --bs-tooltip-bg: #373A3C;
+    }
+
+    /* CARRUSEL */
+    .card img {
+        border-radius: 0;
+    }
+
+    .carousel-indicators {
+        position: inherit;
+    }
+
+    .carousel-indicators button {
+        width: 0.85rem!important;
+        height: 0.85rem!important;
+        background-color: #373A3C31!important;
+    }
+
+    .carousel-indicators .active {
+        background-color: #373A3C!important;
+    }
+
+    #botones_carrusel {
+        border-radius: 0.85rem;
+        border: 0 solid white;
+        margin-top: 1.5rem;
+    }
+
+    /* PASOS RECETA */
+    .ingredientes ul {
+        list-style:none;
+        padding-left: 0;
+    }
+
+    .ingredientes h3, .preparacion h3 {
+        width: fit-content;
+    }
+
+    .ingredientes ul li,  .ingredientes h4, .preparacion ol li {
+        font-size: 1.25rem;
+    }
+
+    .preparacion ol {
+        padding-left: 1rem;
+    }
+    
+/* RECETAS RELACIONADAS */
+    .card-body {
+        height: fit-content;
+    }
+
+    #tarjeta1, #tarjeta2, #tarjeta3 {
+        cursor: pointer;
+        min-height: 4rem;
+    }
+
+    #tarjeta1:hover, #tarjeta2:hover, #tarjeta3:hover {
+        opacity: 0.5;
+    }
+
+    #ocultar1, #ocultar2, #ocultar3 {
+        min-height: 6rem;
+    }
+
+/* NEWSLETTER */
+    #contacto {
+        line-height: 1.6rem;
+    }
+    .btn-outline-light{
+        --bs-btn-hover-color: #c9444b;
+    }
+
+    #newsletterEnviar {
+        padding: 0.5rem 6rem;
+    }
+
+    #exampleModalLabel {
+        font-family: 'Cabin', sans-serif;
+    }
+
+/* FOOTER */
+footer {
+    background-color: #373A3C;
+}
+
+@media (max-width:576px) {
+    #newsletter {
+        padding: 15%!important;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0;
+        margin: 0;
+    }
+
+    #ocultar1, #ocultar2, #ocultar3 {
+        min-height: 11rem;
+    }
+
+    #tarjeta1, #tarjeta2, #tarjeta3 {
+        cursor: pointer;
+        min-height: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #tarjeta1, #tarjeta2, #tarjeta3 {
+        min-height: fit-content;
+    }
+
+    #ocultar1, #ocultar2, #ocultar3 {
+        min-height: fit-content;
+    }
+}
